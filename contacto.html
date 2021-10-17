@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body >
+    <form action="">
+
+<fieldset class="estilocontacto ajustefondos">
+    <h3>Dejanos tu Consulta</h3>
+    <br>
+    <label for="name">Nombre</label>
+    <input type="text" name="name" placeholder="(Obligatorio)" required >
+    <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" placeholder=(Obligatorio) required>
+    <br>
+    <label for="telefono">Telefono</label>
+    <input type="text" name="telefono" placeholder="(Opcional)">
+    <br>
+    <label for="mail">Mail</label>
+    <input type="text" name="mail" placeholder="(Obligatorio)" required>
+    <br>
+    <input type="checkbox" name="cbox1"> Recibir Noticias y Ofertas del Sitio
+    <br>
+    <select name="motivo" id="" required>
+        <option value="">Motivo de la consulta (Obligatorio)</option>
+        <option value="productos">Productos</option>
+        <option value="servicios">Servicios</option>
+        <option value="asesoramiento">Asesoramiento</option>
+    </select>
+    <br>
+    <h3>Escribí tu mensaje (Obligatorio):</h3>
+    <textarea name="consulta" id="" cols="30" rows="10" maxlength="256" required></textarea>
+    <br>
+    <input type="submit" value="Enviá tu consulta">
+    <br>
+    <input type="reset" value="Limpiar formulario">
+    <br>
+    <input type="button" value="On Click...">
+</fieldset>
+    </form>
+    <footer class="ajustefondos footercontacto"><a href="index.html">HOME</a></footer>
+</body>
+</html>

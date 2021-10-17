@@ -1,0 +1,339 @@
+* {
+    Margin:0;
+    padding:0;
+ }  
+
+ /* AJUSTES GENERALES: INICIO //////////////////////////////////////////////////////////////////////////////////*/
+
+ body{
+     background-image: url(./img/cielo.jpg);
+     background-size: cover;
+ }
+
+ a{
+    text-decoration: none;   
+    color: rgb(179, 199, 202);    
+}
+
+a:hover{
+    color:rgb(84, 196, 84);
+}
+
+ul li {
+    text-decoration-line: none;
+    font-style:oblique; 
+    font-family: Teko, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    font-weight: bolder;
+    list-style-type: none;    
+    line-height: 1.5;  
+    display: inline;   
+    padding:4rem;    
+     }
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: coral;
+    padding: 1rem;       
+}
+
+.estilolinks {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(77, 230, 235);
+    padding: 1rem;
+    border-style: double;
+}
+
+.ajustefondos{
+    background-size: cover;
+    background-position: center; 
+    text-align:center;  
+    border-style:solid;
+    border-radius: 1%;
+    border-color:rgb(113, 154, 182)   
+ }
+
+ .estilosecciones{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:100%;
+    color: rgb(135, 205, 222);    
+    line-height: 1.5rem;
+}
+
+.descripciones{
+    font-style:oblique; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+}
+
+@keyframes colores{
+    0%{color: red}
+    50%{color:green}
+    75%{color:yellow}
+    100%{color: red}
+}
+
+.coloreado{
+   animation-name: colores;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+   animation-duration: 6s;
+   animation-delay: 1s;
+   font-family: Teko, Geneva, Tahoma, sans-serif;
+}
+ /* AJUSTES GENERALES: FIN /////////////////////////////////////////////////////////////////////////////////*/
+
+/*PAGINA DE INICIO: INICIO /////////////////////////////////////////////////////////////////////////////////*/
+
+.grillahome{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 36% 36% 26%;
+    grid-template-rows:2.5rem 40rem 30rem 30rem 2.5rem  ;
+    grid-template-areas:     
+    "navegacion navegacion navegacion  "
+    "marca marca ofertas"
+    "productos productos ofertas"
+    "servicios servicios ofertas"    
+    "footer footer footer";
+}
+
+header{
+    background-image: linear-gradient(to top,rgb(0, 0, 8),rgb(197, 209, 211));    
+    grid-area: navegacion;    
+    text-align:center;
+    }
+
+.estilomarca {
+    font-style:italic;    
+    background-image: url(./img/fondomarca2.jpg);        
+    color: rgb(14, 138, 187);      
+    font-size: 300%;
+    font-family: Chonburi, Verdana, Geneva, Tahoma, sans-serif;   
+    grid-area: marca;           
+}
+
+.estilofertas{    
+    background-image: url(./img/fondomarca2.jpg);    
+    font-size: 200%;    
+    grid-area: ofertas;    
+}
+
+.estilofertas:hover{
+    transform: scale(1.01,1.01);
+}
+
+.estiloproductoshome{    
+    background-image: url(./img/productos.jpg);    
+    grid-area: productos;   
+}
+
+.estiloproductoshome:hover{
+    transform: scale(1.01,1.01);
+}
+
+.estiloservicioshome{    
+    background-image: url(./img/servicios.jpg);   
+    background-size:unset; 
+    grid-area: servicios;   
+}
+
+.estiloservicioshome:hover{
+    transform: scale(1.01,1.01);
+}
+
+.flexofertas{
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 255, 242);    
+}
+
+.oferta1{
+    background-image: url(./img/ofertapc.jpg);
+    background-position: center;
+    background-size:cover;
+    padding: 9rem;   
+      
+}
+
+.oferta2{
+    background-image: url(./img/ofertaportatil.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 9rem;
+}
+
+.oferta3{
+    background-image: url(./img/ofertamonitor.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 9rem;
+}
+
+.oferta4{
+    background-image: url(./img/ofertaconectividad.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 9rem;
+}
+
+.footerhome {
+    color: rgb(164, 168, 196);
+    background-image: linear-gradient(to top,rgb(0, 0, 8),rgb(197, 209, 211));
+    font-style:oblique; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+    grid-area: footer;       
+}
+/*PAGINA DE INICIO: FIN ///////////////////////////////////////////////////////////////////////////////////*/
+
+/* PAGINA DE PRODUCTOS: INICIO ////////////////////////////////////////////////////////////////////////////*/
+
+.grillaproductos{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 33% 33% 32%;    
+    grid-template-rows: 2.5rem 50rem 2.5rem;
+    grid-template-areas:
+    "navegacion navegacion navegacion"
+    "computadoras redes perifericos"
+    "footerproductos footerproductos footerproductos";
+}
+
+.estiloproductos{
+    font-size: 200%;    
+}
+
+.estilocomputadoras{
+    background-image: url(./img/computadoras.jpg);   
+        
+    grid-area: computadoras;
+}
+
+.estiloredes{
+    background-image: url(./img/redes.jpg);   
+     
+    grid-area:redes;  
+}
+
+.estiloperifericos{
+    background-image: url(./img/perifericos.jpg); 
+    
+    grid-area:perifericos;
+}
+
+.marcoslistas{
+    font-family:Verdana, Geneva, Tahoma, sans-serif, cursive;
+    padding: 2rem;  
+    caption-side: top;
+    color: rgb(15, 114, 6);
+    text-align: center;
+    line-height: 2rem;
+    column-gap:inherit;
+    width: 50%;  
+  }
+
+  .footerproductos{
+    color: burlywood;
+    background-image: url(./img/fondomenu.jpg);
+    background-repeat: no-repeat;
+    font-style:oblique; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+    grid-area: footerproductos;
+}
+/* PAGINA DE PRODUCTOS: FIN /////////////////////////////////////////////////////////////////////////////////*/
+
+/* PAGINA DE SERVICIOS: INICIO //////////////////////////////////////////////////////////////////////////////*/
+
+.grillaservicios{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 50% 49%;
+    grid-template-rows: 2.5rem 50rem 2.5rem;
+    grid-template-areas:
+    "navegacion navegacion"
+    "servtecnico consultoria"
+    "footerserv footerserv"
+}
+
+.estiloservicios{
+    font-size: 200%;  
+}
+
+.estiloserviciotecnico{
+    background-image: url(./img/serviciotecnico.jpg);        
+    grid-area:servtecnico;
+}
+
+.estiloconsultoria{
+    background-image: url(./img/consultoria.jpg);    
+    grid-area:consultoria;
+}
+
+.footerservicios{
+    color: burlywood;
+    background-image: url(./img/fondomenu.jpg);
+    background-repeat: no-repeat;
+    font-style:oblique; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+    grid-area:footerserv;
+}
+/* PAGINA DE SERVICIOS: FIN ///////////////////////////////////////////////////////////////////////////////*/
+
+/*PAGINA DE CONTACTOS: INICIO /////////////////////////////////////////////////////////////////////////////*/
+.estilocontacto{
+    background-image: url(./img/contacto.jpg);  
+    background-repeat: no-repeat;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;   
+    color: rgb(114, 184, 135);
+    padding:13rem;       
+}
+
+.footercontacto{
+    color: burlywood;
+    background-image: url(./img/fondomenu.jpg);
+    background-repeat: no-repeat;
+    font-style:oblique; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+}
+ /*PAGINA DE CONTACTOS: FIN ///////////////////////////////////////////////////////////////////////////////*/
+
+ /*PAGINA ACERCA DE: INICIO ///////////////////////////////////////////////////////////////////////////////*/
+.estiloacercade{       
+        background-image: url(./img/acercade.jpg);          
+        font-size: 220%;
+        color: rgb(85, 219, 219);
+        font-family: Arial, Helvetica, sans-serif;           
+        padding:26rem;       
+}
+
+.footeracercade{
+    color: burlywood;
+    background-image: url(./img/fondomenu.jpg);
+    background-repeat: no-repeat;
+    font-style:oblique; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+}
+
+/*PAGINA ACERCA DE: FIN ////////////////////////////////////////////////////////////////////////////////////*/
+
+/*PAGINA DE LA TIENDA: INICIO //////////////////////////////////////////////////////////////////////////////*/
+
+.estilotienda{
+    background-image: url(./img/fondomenu.jpg);          
+    padding:14rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:200%;
+    color: rgb(28, 170, 75);    
+}
+
+.footertienda{
+    color: burlywood;
+    background-image: url(./img/fondomenu.jpg);
+    background-repeat: no-repeat;
+    font-style:oblique; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+}
+/*PAGINA DE LA TIENDA: FIN /////////////////////////////////////////////////////////////////////////////////*/
